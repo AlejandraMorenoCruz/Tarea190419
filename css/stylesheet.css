@@ -1,26 +1,53 @@
+html{
+  height: inherit;
+  width: inherit;
+}
+
+body{
+  background-image: linear-gradient(to bottom right, #4AC29A,#BDFFF3);
+  background-repeat: no-repeat;
+}
 
 nav {
   display:flex;
   text-align:center;
   justify-content: center;
   font-family:lato;
-  bgcolor: #fff;
+}
 
+.profile{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile img{
+  width: 200px;
+}
+
+.foto {
+  width: 300px;
+  height: 300px;
+  background-image:url("yo2.jpg");
+  background-size:cover;
+  background-position:center;
+  border-radius:50%;
+  border:4px solid #fff;
 }
 nav a {
-  color: #000;
+  color: #eee;
   font-size: 14;
   text-decoration:none;
 }
 
 h1 {
-  font-size:50px;
+  font-size:7ex;
   font-weight: 500;
   text-align:center;
   font-family:lato;
-  margin-top: 200px;
+  margin-top: 5%;
   margin-bottom:0px;
-  color: #00C4A9;
+  color: #fff;
 }
 
 nav p{
@@ -29,24 +56,31 @@ nav p{
 }
 nav a:hover{
   cursor:pointer;
-  color:#00C4A9;
+  color:#00ad90;
   font-size: 18;
   transform:scale(1.2);
 }
+
 .slogan{
-  font-size:28px;
-  font-weight: bold;
+  font-size:4ex;
+  font-weight: 350;
   margin-top:0px;
   text-align:center;
   font-family: lato;
+  color: #555;
 }
+
 .lista{
-  font-size:38px;
-  font-weight: 300;
-  margin-top:0px;
+  font-size: 4ex;
+  font-weight: 500;
+  margin-top: 0px;
   text-align:center;
   font-family: lato;
   /*display: flex;*/
+}
+
+img .lista{
+  margin-top: 40px;
 }
 
 .contacto{
@@ -55,7 +89,8 @@ nav a:hover{
 
 .contacto img{
   width:24px;
-  margin:280px 12px;
+  margin-top: 0;
+  margin: 22px;
 }
 .contacto img:hover{
   transform:scale(1.2);
@@ -65,18 +100,34 @@ nav a:hover{
 
 ul {
   font-family: lato;
-  font-size: 20px;
+  font-size: 2ex;;
   text-align: center;
   display: inline;
-  padding-bottom: 5ex;
-  color: #00C4A9;
+  padding-bottom: 3ex;
+  color: #555;
 }
 ul li {
   margin-bottom: 2ex;
 }
-.book{
-  margin-left: auto;
-      margin-right: auto;
-      display: grid;
 
+input{
+  width: 50%;
+  height: 20px;
+  background: linear-gradient(to right, #ddd, #fee);
+}
+textarea{
+  width: 50%;
+  height: 80px;
+  background: linear-gradient(to right, #ddd, #fee);
+}
+.book{
+  display: grid;
+  justify-content:center;
+}
+
+button{
+  background-color: #eee;
+  color: #555;
+  font-size: 2ex;
+  font-family: lato;
 }
